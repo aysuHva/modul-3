@@ -37,6 +37,9 @@ function getData(e) {
       toP.innerText = `1 ${to} = ${1 / out} ${from}`;
       calc(out);
     });
+      .catch((err) => {
+      alert(err.message);
+    });
 }
 
 function fromValue(e) {
